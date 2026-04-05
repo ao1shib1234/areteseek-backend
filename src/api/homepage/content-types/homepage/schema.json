@@ -1,0 +1,88 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "heroButtonText": {
+      "type": "string",
+      "default": "Find out more"
+    },
+    "companyDescription": {
+      "type": "text"
+    },
+
+    "cloudTeaserText": {
+      "type": "text"
+    },
+    "cloudTeaserButtonText": {
+      "type": "string"
+    },
+    "cloudTeaserButtonLink": {
+      "type": "string"
+    },
+
+    "solutionsTitle": {
+      "type": "string"
+    },
+    "solutionsParagraph1": {
+      "type": "text"
+    },
+    "solutionsParagraph2": {
+      "type": "text"
+    },
+    "solutionsButtonText": {
+      "type": "string"
+    },
+    "solutionsImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+
+    "productsTitle": {
+      "type": "string"
+    },
+    "productsParagraph": {
+      "type": "text"
+    },
+    "productsButtonText": {
+      "type": "string"
+    },
+    "productsImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+
+    "whyTitle": {
+      "type": "string"
+    },
+    "whyParagraph": {
+      "type": "text"
+    },
+    "whyButtonText": {
+      "type": "string"
+    },
+    "whyImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

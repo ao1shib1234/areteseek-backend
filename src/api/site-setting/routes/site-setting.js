@@ -1,3 +1,3 @@
 'use strict';
-const { createSingleTypeRouter } = require('@strapi/strapi').factories;
-module.exports = createSingleTypeRouter('api::site-setting.site-setting');
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::site-setting.site-setting');

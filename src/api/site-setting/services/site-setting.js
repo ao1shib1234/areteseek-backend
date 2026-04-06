@@ -1,3 +1,3 @@
 'use strict';
-const { createSingleTypeService } = require('@strapi/strapi').factories;
-module.exports = createSingleTypeService('api::site-setting.site-setting');
+const { createCoreService } = require('@strapi/strapi').factories;
+module.exports = createCoreService('api::site-setting.site-setting');

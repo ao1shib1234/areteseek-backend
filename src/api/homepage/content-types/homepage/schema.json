@@ -10,6 +10,9 @@
     "draftAndPublish": false
   },
   "attributes": {
+    "heroVideoUrl": {
+      "type": "string"
+    },
     "heroImage": {
       "type": "media",
       "multiple": false,

@@ -77,7 +77,7 @@ module.exports = {
       const resend = new Resend(apiKey);
       const subject = `New Enquiry: ${result.product || 'Product'} — ${result.name}`;
 
-      await resend.emails.send({
+      const { data, error } = await resend.emails.send({
         from: fromAddress,
         to: recipients,
         replyTo: result.email,
@@ -85,11 +85,16 @@ module.exports = {
         html: buildHtml(result),
       });
 
+      if (error) {
+        strapi.log.error(`[enquiry] Resend API rejected: ${JSON.stringify(error)}`);
+        return;
+      }
+
       await strapi.entityService.update('api::enquiry.enquiry', result.id, {
         data: { emailSent: true },
       });
 
-      strapi.log.info(`[enquiry] notification email sent for enquiry #${result.id}`);
+      strapi.log.info(`[enquiry] notification email sent for enquiry #${result.id} (Resend id: ${data && data.id})`);
     } catch (err) {
       strapi.log.error(`[enquiry] failed to send notification email: ${err.message}`);
     }

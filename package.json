@@ -16,7 +16,6 @@
     "@strapi/plugin-users-permissions": "4.26.1",
     "@strapi/provider-upload-cloudinary": "^5.41.1",
     "@strapi/strapi": "4.26.1",
-    "@swc/core-win32-x64-msvc": "^1.15.24",
     "better-sqlite3": "8.6.0",
     "pg": "^8.20.0",
     "pg-connection-string": "^2.12.0",

@@ -25,6 +25,13 @@
     "resend": "^6.12.2",
     "styled-components": "5.3.3"
   },
+  "optionalDependencies": {
+    "@swc/core-linux-x64-gnu": "1.15.24",
+    "@swc/core-linux-x64-musl": "1.15.24",
+    "@swc/core-darwin-arm64": "1.15.24",
+    "@swc/core-darwin-x64": "1.15.24",
+    "@swc/core-win32-x64-msvc": "1.15.24"
+  },
   "author": {
     "name": "A Strapi developer"
   },

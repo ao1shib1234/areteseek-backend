@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enquiries",
+  "info": {
+    "singularName": "enquiry",
+    "pluralName": "enquiries",
+    "displayName": "Enquiry",
+    "description": "Product enquiry form submissions"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "email": { "type": "email", "required": true },
+    "product": { "type": "string" },
+    "comments": { "type": "text", "required": true },
+    "sourceUrl": { "type": "string" },
+    "emailSent": { "type": "boolean", "default": false }
+  }
+}
